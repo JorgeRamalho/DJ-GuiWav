@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://guiwave.com.br/sitemap.xml

@@ -1,0 +1,118 @@
+{
+  "collectedAt": "2026-10-27T00:13:00-03:00",
+  "method": "Playwright MCP sobre o perfil público e posts abertos",
+  "profile": {
+    "handle": "gui_wav",
+    "url": "https://www.instagram.com/gui_wav/",
+    "fullName": "Guilherme Do Nascimento",
+    "displayName": "Guilherme",
+    "artistName": "GUI WAV",
+    "followers": 1339,
+    "following": 1012,
+    "postsCount": 11,
+    "bio": [
+      "DJ | Producer",
+      "Vice-Campeão da 3ª Etapa Circuito 2026",
+      "Psytrance: @frenyx_",
+      "Formado pela: @aimeccuritiba",
+      "CEO: @wav_fest"
+    ],
+    "external": {
+      "soundcloudSet": "https://soundcloud.com/guilherme-694223527/circuito2026-set-gui-wav",
+      "soundcloudProfile": "https://soundcloud.com/guilherme-694223527",
+      "youtubeSet": "https://youtube.com/watch?v=xyHZcFn_G9U"
+    },
+    "highlights": ["CIRCUITO 2026", "Agenda", "Aimec", "Lançamentos"]
+  },
+  "soundcloud": {
+    "artist": "GuiWAV",
+    "followers": 88,
+    "tracks": 3,
+    "featuredSet": {
+      "title": "@CIRCUITO2026 – Set (GUI WAV)",
+      "plays": 4098,
+      "likes": 176,
+      "reposts": 10,
+      "comments": 28,
+      "genre": "Minimal"
+    },
+    "officialBio": "GUI WAV é DJ de Curitiba, ativo desde 2022, com foco em Minimal e Tech House. Influenciado por Louie Cut e Avrosse, entrega sets hipnóticos e envolventes. Formação AIMEC."
+  },
+  "wavFestBio": "Guilherme Do Nascimento é o nome por trás do projeto GUI WAV que transita entre Minimal e Tech House. Primeiro contato com eletrônica aos 17 anos. Sets com grooves hipnóticos, linhas de baixo intensas e melodias psicodélicas. Artista que deu o pontapé inicial da WAV Fest.",
+  "posts": [
+    {
+      "url": "https://www.instagram.com/gui_wav/p/DaOjVrhlHCh/",
+      "date": "2026-06-30",
+      "likes": 106,
+      "comments": 51,
+      "theme": "jornada-circuito",
+      "insight": "Alto comentário (48% sobre likes). Narrativa de sonho Park Art. Tom grato e comunitário.",
+      "excerpt": "Um sonho que antes parecia distante, hoje começa a se tornar realidade. Caminhada no Circuito rumo ao palco do Park Art."
+    },
+    {
+      "url": "https://www.instagram.com/gui_wav/p/DcwyrxblM3y/",
+      "date": "2026-09-01",
+      "likes": 86,
+      "comments": 33,
+      "theme": "classificacao-final",
+      "insight": "Melhor dia da vida + classificação. Memória afetiva vende mais que técnica.",
+      "excerpt": "Alguns registros de um dos melhores dias da minha vida. Sonho realizado e classificação para a grande final do circuito."
+    },
+    {
+      "url": "https://www.instagram.com/djedsonb/p/DctP6-BOQDi/",
+      "date": "2026-08-31",
+      "likes": 141,
+      "comments": 28,
+      "theme": "resultado-oficial",
+      "insight": "Prova social de terceiros. Pódio: Santss, Gui Wav, Daymon.",
+      "excerpt": "1º Santss · 2º Gui Wav · 3º Daymon. Vagas na grande final do Circuito."
+    },
+    {
+      "url": "https://www.instagram.com/gui_wav/p/DLtBNxYP847/",
+      "date": "2025-07-04",
+      "likes": 36,
+      "comments": 10,
+      "theme": "after-party",
+      "insight": "Tom informal funciona para after. CTA de presença.",
+      "excerpt": "Esse after vai pega. Se você não for só você não vai."
+    },
+    {
+      "url": "https://www.instagram.com/gui_wav/reel/CzEuG-8PMQL/",
+      "date": "2023-10-31",
+      "likes": 17,
+      "comments": 2,
+      "theme": "lancamento-youtube",
+      "insight": "Catálogo antigo. Reciclar set no YouTube na campanha SINAL.",
+      "excerpt": "Setzinho novo lançado no YouTube."
+    },
+    {
+      "url": "https://www.instagram.com/wav_fest/p/DOJPbHzjtX2/",
+      "date": "2025-09-03",
+      "likes": 61,
+      "comments": 11,
+      "theme": "bio-oficial-wavfest",
+      "insight": "Melhor texto de press kit já publicado. Usar como bio longa.",
+      "excerpt": "Guilherme Do Nascimento / GUI WAV / fundador da WAV Fest."
+    },
+    {
+      "url": "https://www.instagram.com/robsonbdayniverlow/reel/DdHoOhcKpZM/",
+      "date": "2026-09-10",
+      "theme": "booking-festa",
+      "insight": "Presença em festa privada (Niver Low / Só Track Boa) amplia booking social."
+    },
+    {
+      "url": "https://www.instagram.com/wav_fest/p/DLU4trcO3aN/",
+      "date": "2025-06-25",
+      "theme": "wav-fest"
+    }
+  ],
+  "positioningInsights": [
+    "11 posts vs 1339 seguidores: conta subalimentada. Volume é a alavanca #1.",
+    "Razão comentário/like acima de 30% nos posts do Circuito: comunidade quente, algoritmo favorece resposta.",
+    "Following quase igual a followers: reduzir follow-for-follow e crescer autoridade.",
+    "Destaques já organizam a jornada (Circuito, Agenda, Aimec, Lançamentos).",
+    "Dupla identidade GUI WAV (minimal/tech house) + FRENYX (psytrance) precisa de trilhos visuais separados.",
+    "WAV FEST é ecossistema próprio: o artista não depende só de casas de terceiros.",
+    "SoundCloud do Circuito já tem 4k plays — ativo âncora para a LP SINAL."
+  ]
+}

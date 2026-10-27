@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1350" role="img" aria-label="Criativo Circuito 2026 vice-campeão">
+  <rect width="1080" height="1350" fill="#07070C"/>
+  <rect x="40" y="40" width="1000" height="1270" fill="none" stroke="#E8B84A" stroke-width="2"/>
+  <text x="80" y="160" fill="#E8B84A" font-family="Figtree, sans-serif" font-size="28" letter-spacing="8">CIRCUITO 2026 · 3ª ETAPA</text>
+  <text x="80" y="320" fill="#F4F1EA" font-family="Outfit, sans-serif" font-size="92" font-weight="800">VICE</text>
+  <text x="80" y="420" fill="#00E8FF" font-family="Outfit, sans-serif" font-size="92" font-weight="800">CAMPEÃO</text>
+  <text x="80" y="540" fill="#F4F1EA" font-family="Figtree, sans-serif" font-size="36">GUI WAV classificado para a</text>
+  <text x="80" y="600" fill="#FF2EC8" font-family="Outfit, sans-serif" font-size="52" font-weight="700">GRANDE FINAL · PARK ART</text>
+  <text x="80" y="760" fill="#8B8A96" font-family="Figtree, sans-serif" font-size="28" letter-spacing="3">1º SANTSS · 2º GUI WAV · 3º DAYMON</text>
+  <path d="M80 860 C220 760, 360 960, 500 860 S780 760, 1000 860" fill="none" stroke="#00E8FF" stroke-width="6"/>
+  <text x="80" y="1220" fill="#F4F1EA" font-family="Outfit, sans-serif" font-size="40" font-weight="700">#RumoAoParkArt</text>
+</svg>

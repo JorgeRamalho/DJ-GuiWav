@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 120" role="img" aria-labelledby="lkTitle">
+  <title id="lkTitle">DJ GuiWave  lockup</title>
+  <defs>
+    <linearGradient id="lkAurora" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#E24CC8"/>
+      <stop offset="28%" stop-color="#8B5CFF"/>
+      <stop offset="62%" stop-color="#4AE8F0"/>
+      <stop offset="100%" stop-color="#C9A35A"/>
+    </linearGradient>
+    <linearGradient id="lkPlate" x1="50%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" stop-color="#12151F"/>
+      <stop offset="100%" stop-color="#07080F"/>
+    </linearGradient>
+    <radialGradient id="lkCore" cx="48%" cy="42%" r="48%">
+      <stop offset="0%" stop-color="#4AE8F0" stop-opacity=".3"/>
+      <stop offset="100%" stop-color="#07080F" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect x="4" y="10" width="100" height="100" rx="28" fill="url(#lkPlate)"/>
+  <circle cx="54" cy="60" r="36" fill="url(#lkCore)"/>
+  <circle cx="54" cy="60" r="34" fill="none" stroke="url(#lkAurora)" stroke-width=".9" opacity=".6"/>
+  <path d="M26 62 C34 46 42 46 50 62 S66 78 74 62 S90 46 96 54" fill="none" stroke="url(#lkAurora)" stroke-width="4.2" stroke-linecap="round"/>
+  <circle cx="50" cy="62" r="2" fill="#F4F1EA"/>
+  <text x="124" y="58" fill="#E7E4DC" font-family="Outfit, Segoe UI, sans-serif" font-size="34" font-weight="600" letter-spacing="4">GUI</text>
+  <text x="206" y="58" fill="url(#lkAurora)" font-family="Outfit, Segoe UI, sans-serif" font-size="34" font-weight="600" letter-spacing="4">WAVE</text>
+  <text x="124" y="84" fill="#8A8894" font-family="Figtree, Segoe UI, sans-serif" font-size="11" font-weight="500" letter-spacing="3.2">CURITIBA · MINIMAL / TECH HOUSE</text>
+</svg>

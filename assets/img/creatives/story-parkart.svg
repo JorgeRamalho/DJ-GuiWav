@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1920" role="img" aria-label="Story Instagram Rumo ao Park Art">
+  <rect width="1080" height="1920" fill="#05060C"/>
+  <circle cx="900" cy="300" r="260" fill="#00E8FF" opacity=".1"/>
+  <circle cx="160" cy="1600" r="280" fill="#FF2EC8" opacity=".12"/>
+  <text x="80" y="220" fill="#8B8A96" font-family="Figtree, sans-serif" font-size="28" letter-spacing="10">@GUI_WAV</text>
+  <text x="80" y="520" fill="#F4F1EA" font-family="Outfit, sans-serif" font-size="110" font-weight="800">RUMO</text>
+  <text x="80" y="650" fill="#00E8FF" font-family="Outfit, sans-serif" font-size="110" font-weight="800">AO</text>
+  <text x="80" y="780" fill="#E8B84A" font-family="Outfit, sans-serif" font-size="110" font-weight="800">PARK</text>
+  <text x="80" y="910" fill="#E8B84A" font-family="Outfit, sans-serif" font-size="110" font-weight="800">ART</text>
+  <text x="80" y="1100" fill="#F4F1EA" font-family="Figtree, sans-serif" font-size="34">A frequência de Curitiba</text>
+  <text x="80" y="1160" fill="#F4F1EA" font-family="Figtree, sans-serif" font-size="34">vai ao palco do sonho.</text>
+  <text x="80" y="1760" fill="#FF2EC8" font-family="Figtree, sans-serif" font-size="28" letter-spacing="4">MINIMAL · TECH HOUSE · CWB</text>
+</svg>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Booking | Contratar DJ GuiWave em Curitiba</title>
+  <meta name="description" content="Contrate DJ GuiWave para clubes, festivais, afters e eventos em Curitiba. Formulário de booking com consentimento LGPD.">
+  <link rel="canonical" href="https://guiwave.com.br/contato">
+  <link rel="icon" href="/assets/img/brand/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/guiwave.css">
+</head>
+<body data-page="contato">
+  <a class="skip" href="#conteudo">Pular para o conteúdo</a>
+  <div id="app-header"></div>
+  <main id="conteudo" class="wrap section">
+    <p class="kicker">Booking</p>
+    <h1>Chame a frequência para a sua pista.</h1>
+    <p class="lead">Clubes, afters, festas privadas, WAV Fest e seletivas. Resposta via Instagram @gui_wav enquanto o e-mail de booking é ativado no ar.</p>
+
+    <div class="grid-2" style="margin-top:2rem">
+      <form class="card" name="booking" method="POST" data-netlify="true" netlify-honeypot="bot-field" data-booking>
+        <input type="hidden" name="form-name" value="booking">
+        <p class="sr-only">Não preencha se for humano: <input name="bot-field" tabindex="-1" autocomplete="off"></p>
+        <label>Nome completo <input name="name" required autocomplete="name"></label>
+        <label>E-mail <input type="email" name="email" required autocomplete="email"></label>
+        <label>WhatsApp <input type="tel" name="phone" autocomplete="tel"></label>
+        <label>Tipo de evento
+          <select name="type" required>
+            <option value="">Selecione</option>
+            <option>Clube / balada</option>
+            <option>Festival</option>
+            <option>After</option>
+            <option>Festa privada</option>
+            <option>Corporativo</option>
+            <option>Casamento / social</option>
+            <option>Imprensa / entrevista</option>
+          </select>
+        </label>
+        <label>Data pretendida <input type="date" name="date"></label>
+        <label>Casa / endereço <input name="venue" placeholder="Club Vibe, Danghai, salão..."></label>
+        <label>Cidade <input name="city" value="Curitiba"></label>
+        <label>Mensagem <textarea name="message" required placeholder="Público, duração do set, cache de referência, sonoridade desejada."></textarea></label>
+        <label class="row">
+          <input type="checkbox" name="privacy" required>
+          <span>Li e aceito a <a href="/privacidade">política de privacidade</a> e o uso dos dados só para responder este booking.</span>
+        </label>
+        <button class="btn btn-primary" type="submit">Enviar briefing</button>
+        <p class="muted" data-form-status></p>
+      </form>
+      <aside class="stack">
+        <figure class="portrait" data-lightbox>
+          <img src="/assets/img/artista/cabine-punho.png" alt="DJ GuiWave no booth, disponível para booking em Curitiba">
+        </figure>
+        <article class="card">
+          <h3>Canais oficiais</h3>
+          <p><a href="https://www.instagram.com/gui_wav/" rel="noopener noreferrer">Instagram @gui_wav</a></p>
+          <p><a href="https://soundcloud.com/guilherme-694223527" rel="noopener noreferrer">SoundCloud GuiWAV</a></p>
+          <p><a href="https://www.instagram.com/wav_fest/" rel="noopener noreferrer">WAV Fest</a></p>
+          <p><a href="https://www.instagram.com/frenyx_/" rel="noopener noreferrer">Frenyx — psytrance</a></p>
+          <p><a href="https://youtube.com/watch?v=xyHZcFn_G9U" rel="noopener noreferrer">Set no YouTube</a></p>
+        </article>
+        <article class="card">
+          <h3>Tech rider resumido</h3>
+          <p>2x CDJ / XDJ ou controlador compatível Rekordbox, mixer 4 canais, monitoramento de palco, microfone de retorno se houver anúncio, acesso 60 minutos antes, água e camarim simples. Formatos: Rekordbox USB + backup.</p>
+        </article>
+      </aside>
+    </div>
+  </main>
+  <div id="app-footer"></div>
+  <div id="consent-root"></div>
+  <script src="/assets/js/data.js"></script>
+  <script src="/assets/js/guiwave.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,169 @@
+[build]
+  publish = "."
+
+[dev]
+  framework = "#static"
+  port = 8888
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "camera=(), microphone=(), geolocation=()"
+    Content-Security-Policy = "default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; script-src 'self' 'unsafe-inline'; frame-src https://w.soundcloud.com https://www.youtube.com; connect-src 'self';"
+
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
+
+# Descoberta web: arquivos físicos em /seo, URLs canônicas na raiz.
+[[redirects]]
+  from = "/robots.txt"
+  to = "/seo/robots.txt"
+  status = 200
+
+[[redirects]]
+  from = "/sitemap.xml"
+  to = "/seo/sitemap.xml"
+  status = 200
+
+[[redirects]]
+  from = "/manifest.webmanifest"
+  to = "/seo/manifest.webmanifest"
+  status = 200
+
+# Materiais de imprensa: pasta física em /content/press-kit, URL pública estável.
+[[redirects]]
+  from = "/press-kit/one-sheet"
+  to = "/content/press-kit/one-sheet.html"
+  status = 200
+
+[[redirects]]
+  from = "/press-kit/one-sheet.html"
+  to = "/press-kit/one-sheet"
+  status = 301
+
+[[redirects]]
+  from = "/press-kit/bio-curta.txt"
+  to = "/content/press-kit/bio-curta.txt"
+  status = 200
+
+[[redirects]]
+  from = "/press-kit/bio-longa.txt"
+  to = "/content/press-kit/bio-longa.txt"
+  status = 200
+
+[[redirects]]
+  from = "/press-kit/legendas-sociais.md"
+  to = "/content/press-kit/legendas-sociais.md"
+  status = 200
+
+# Páginas: um arquivo em /pages, URL limpa na raiz.
+[[redirects]]
+  from = "/sobre"
+  to = "/pages/sobre.html"
+  status = 200
+
+[[redirects]]
+  from = "/lp"
+  to = "/pages/lp.html"
+  status = 200
+
+[[redirects]]
+  from = "/agenda"
+  to = "/pages/agenda.html"
+  status = 200
+
+[[redirects]]
+  from = "/locais"
+  to = "/pages/locais.html"
+  status = 200
+
+[[redirects]]
+  from = "/press-kit"
+  to = "/pages/press-kit.html"
+  status = 200
+
+[[redirects]]
+  from = "/campanhas"
+  to = "/pages/campanhas.html"
+  status = 200
+
+[[redirects]]
+  from = "/contato"
+  to = "/pages/contato.html"
+  status = 200
+
+[[redirects]]
+  from = "/privacidade"
+  to = "/pages/privacidade.html"
+  status = 200
+
+[[redirects]]
+  from = "/obrigado"
+  to = "/pages/obrigado.html"
+  status = 200
+
+# Compatibilidade com URLs antigas *.html na raiz.
+[[redirects]]
+  from = "/sobre.html"
+  to = "/sobre"
+  status = 301
+
+[[redirects]]
+  from = "/lp.html"
+  to = "/lp"
+  status = 301
+
+[[redirects]]
+  from = "/agenda.html"
+  to = "/agenda"
+  status = 301
+
+[[redirects]]
+  from = "/locais.html"
+  to = "/locais"
+  status = 301
+
+[[redirects]]
+  from = "/press-kit.html"
+  to = "/press-kit"
+  status = 301
+
+[[redirects]]
+  from = "/campanhas.html"
+  to = "/campanhas"
+  status = 301
+
+[[redirects]]
+  from = "/contato.html"
+  to = "/contato"
+  status = 301
+
+[[redirects]]
+  from = "/privacidade.html"
+  to = "/privacidade"
+  status = 301
+
+[[redirects]]
+  from = "/obrigado.html"
+  to = "/obrigado"
+  status = 301
+
+[[redirects]]
+  from = "/404.html"
+  to = "/pages/404.html"
+  status = 404
+
+[[redirects]]
+  from = "/press"
+  to = "/press-kit"
+  status = 301
+
+[[redirects]]
+  from = "/*"
+  to = "/pages/404.html"
+  status = 404
