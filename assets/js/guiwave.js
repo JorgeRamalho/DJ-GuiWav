@@ -2,15 +2,21 @@
   "use strict";
 
   const CONSENT_KEY = "guiwave-consent-v1";
+  const root = document.body.dataset.base || "./";
+
+  function url(path) {
+    return root + String(path || "").replace(/^\//, "");
+  }
+
   const pages = [
-    { href: "/", id: "index", label: "Início" },
-    { href: "/sobre", id: "sobre", label: "Artista" },
-    { href: "/lp", id: "lp", label: "SINAL" },
-    { href: "/agenda", id: "agenda", label: "Agenda" },
-    { href: "/locais", id: "locais", label: "Casas" },
-    { href: "/press-kit", id: "press-kit", label: "Press Kit" },
-    { href: "/campanhas", id: "campanhas", label: "Campanhas" },
-    { href: "/contato", id: "contato", label: "Booking" }
+    { href: url(""), id: "index", label: "Início" },
+    { href: url("sobre/"), id: "sobre", label: "Artista" },
+    { href: url("lp/"), id: "lp", label: "SINAL" },
+    { href: url("agenda/"), id: "agenda", label: "Agenda" },
+    { href: url("locais/"), id: "locais", label: "Casas" },
+    { href: url("press-kit/"), id: "press-kit", label: "Press Kit" },
+    { href: url("campanhas/"), id: "campanhas", label: "Campanhas" },
+    { href: url("contato/"), id: "contato", label: "Booking" }
   ];
 
   const current = document.body.dataset.page || "";
@@ -26,9 +32,9 @@
       header.innerHTML = `
         <header class="site-header" data-header>
           <nav class="nav" data-nav aria-label="Principal">
-            <a class="brand" href="/">
-              <img src="/assets/img/brand/logo.svg" alt="" width="38" height="38">
-              <img class="brand-word" src="/assets/img/brand/wordmark.svg" alt="GUIWAVE">
+            <a class="brand" href="${url("")}">
+              <img src="${url("assets/img/brand/logo.svg")}" alt="" width="38" height="38">
+              <img class="brand-word" src="${url("assets/img/brand/wordmark.svg")}" alt="GUIWAVE">
             </a>
             <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu" data-toggle>
               <span></span><span class="sr-only">Abrir menu</span>
@@ -51,14 +57,14 @@
             </div>
             <div class="stack">
               <strong>Navegar</strong>
-              <a href="/lp">LP SINAL</a>
-              <a href="/press-kit">Press kit / EPKs</a>
-              <a href="/campanhas">Políticas de campanha</a>
-              <a href="/contato">Booking</a>
+              <a href="${url("lp/")}">LP SINAL</a>
+              <a href="${url("press-kit/")}">Press kit / EPKs</a>
+              <a href="${url("campanhas/")}">Políticas de campanha</a>
+              <a href="${url("contato/")}">Booking</a>
             </div>
             <div class="stack">
               <strong>Legal e redes</strong>
-              <a href="/privacidade">Privacidade, cookies e permissões</a>
+              <a href="${url("privacidade/")}">Privacidade, cookies e permissões</a>
               <button type="button" data-open-prefs>Preferências de cookies</button>
               <a href="https://www.instagram.com/gui_wav/" rel="noopener noreferrer">Instagram @gui_wav</a>
               <a href="https://soundcloud.com/guilherme-694223527" rel="noopener noreferrer">SoundCloud</a>
@@ -110,7 +116,7 @@
     if (!root) return;
     root.innerHTML = `
       <div class="consent-bar" data-banner role="dialog" aria-label="Aviso de cookies">
-        <p>Este site usa cookies necessários para funcionar e, se você permitir, embeds de som, analytics e campanhas. <a href="/privacidade">Política completa</a>.</p>
+        <p>Este site usa cookies necessários para funcionar e, se você permitir, embeds de som, analytics e campanhas. <a href="${url("privacidade/")}">Política completa</a>.</p>
         <div class="row">
           <button class="btn btn-primary" type="button" data-accept-all>Aceitar tudo</button>
           <button class="btn btn-ghost" type="button" data-reject>Só essenciais</button>
@@ -374,12 +380,12 @@
       const payload = new FormData(form);
       payload.set("form-name", "booking");
       try {
-        await fetch("/", {
+        await fetch(url(""), {
           method: "POST",
           headers: { "Content-Type": "application/x-www-form-urlencoded" },
           body: new URLSearchParams(payload).toString()
         });
-        window.location.href = "/obrigado";
+        window.location.href = url("obrigado/");
       } catch {
         if (status) status.textContent = "Não foi possível enviar agora. Chame @gui_wav no Instagram.";
       }

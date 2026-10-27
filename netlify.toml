@@ -61,52 +61,6 @@
   to = "/content/press-kit/legendas-sociais.md"
   status = 200
 
-# Páginas: um arquivo em /pages, URL limpa na raiz.
-[[redirects]]
-  from = "/sobre"
-  to = "/pages/sobre.html"
-  status = 200
-
-[[redirects]]
-  from = "/lp"
-  to = "/pages/lp.html"
-  status = 200
-
-[[redirects]]
-  from = "/agenda"
-  to = "/pages/agenda.html"
-  status = 200
-
-[[redirects]]
-  from = "/locais"
-  to = "/pages/locais.html"
-  status = 200
-
-[[redirects]]
-  from = "/press-kit"
-  to = "/pages/press-kit.html"
-  status = 200
-
-[[redirects]]
-  from = "/campanhas"
-  to = "/pages/campanhas.html"
-  status = 200
-
-[[redirects]]
-  from = "/contato"
-  to = "/pages/contato.html"
-  status = 200
-
-[[redirects]]
-  from = "/privacidade"
-  to = "/pages/privacidade.html"
-  status = 200
-
-[[redirects]]
-  from = "/obrigado"
-  to = "/pages/obrigado.html"
-  status = 200
-
 # Compatibilidade com URLs antigas *.html na raiz.
 [[redirects]]
   from = "/sobre.html"
@@ -154,16 +108,11 @@
   status = 301
 
 [[redirects]]
-  from = "/404.html"
-  to = "/pages/404.html"
-  status = 404
-
-[[redirects]]
   from = "/press"
   to = "/press-kit"
   status = 301
 
 [[redirects]]
   from = "/*"
-  to = "/pages/404.html"
+  to = "/404.html"
   status = 404

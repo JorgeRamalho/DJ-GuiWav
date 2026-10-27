@@ -10,15 +10,6 @@ HOST = "127.0.0.1"
 PORT = 4173
 
 REWRITES = {
-    "/sobre": "/pages/sobre.html",
-    "/lp": "/pages/lp.html",
-    "/agenda": "/pages/agenda.html",
-    "/locais": "/pages/locais.html",
-    "/press-kit": "/pages/press-kit.html",
-    "/campanhas": "/pages/campanhas.html",
-    "/contato": "/pages/contato.html",
-    "/privacidade": "/pages/privacidade.html",
-    "/obrigado": "/pages/obrigado.html",
     "/press-kit/one-sheet": "/content/press-kit/one-sheet.html",
     "/press-kit/bio-curta.txt": "/content/press-kit/bio-curta.txt",
     "/press-kit/bio-longa.txt": "/content/press-kit/bio-longa.txt",
@@ -29,17 +20,17 @@ REWRITES = {
 }
 
 LEGACY = {
-    "/sobre.html": "/sobre",
-    "/lp.html": "/lp",
-    "/agenda.html": "/agenda",
-    "/locais.html": "/locais",
-    "/press-kit.html": "/press-kit",
-    "/campanhas.html": "/campanhas",
-    "/contato.html": "/contato",
-    "/privacidade.html": "/privacidade",
-    "/obrigado.html": "/obrigado",
+    "/sobre.html": "/sobre/",
+    "/lp.html": "/lp/",
+    "/agenda.html": "/agenda/",
+    "/locais.html": "/locais/",
+    "/press-kit.html": "/press-kit/",
+    "/campanhas.html": "/campanhas/",
+    "/contato.html": "/contato/",
+    "/privacidade.html": "/privacidade/",
+    "/obrigado.html": "/obrigado/",
     "/press-kit/one-sheet.html": "/press-kit/one-sheet",
-    "/press": "/press-kit",
+    "/press": "/press-kit/",
 }
 
 
@@ -53,14 +44,27 @@ class Handler(SimpleHTTPRequestHandler):
         super().__init__(*args, directory=str(ROOT), **kwargs)
 
     def translate_path(self, path):
-        mapped = REWRITES.get(clean_path(path), path)
-        return super().translate_path(mapped)
+        cleaned = clean_path(path)
+        if cleaned in REWRITES:
+            return super().translate_path(REWRITES[cleaned])
+        folder = ROOT / cleaned.lstrip("/")
+        index = folder / "index.html"
+        if folder.is_dir() and index.exists():
+            return str(index)
+        return super().translate_path(path)
 
     def do_GET(self):
+        raw = urlparse(self.path).path
         path = clean_path(self.path)
         if path in LEGACY:
             self.send_response(301)
             self.send_header("Location", LEGACY[path])
+            self.end_headers()
+            return
+        folder = ROOT / path.lstrip("/")
+        if path != "/" and folder.is_dir() and not raw.endswith("/"):
+            self.send_response(301)
+            self.send_header("Location", path + "/")
             self.end_headers()
             return
         return super().do_GET()
@@ -68,7 +72,7 @@ class Handler(SimpleHTTPRequestHandler):
     def send_error(self, code, message=None, explain=None):
         if code != 404:
             return super().send_error(code, message, explain)
-        body = (ROOT / "pages" / "404.html").read_bytes()
+        body = (ROOT / "404.html").read_bytes()
         self.send_response(404)
         self.send_header("Content-Type", "text/html; charset=utf-8")
         self.send_header("Content-Length", str(len(body)))
